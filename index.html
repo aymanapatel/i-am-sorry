@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            text-align: center;
+            padding: 40px 20px;
+            animation: fadeIn 2s ease-in;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        
+        .heart {
+            color: #e74c3c;
+            font-size: 3em;
+            margin: 20px 0;
+            animation: pulse 1.5s infinite;
+        }
+        
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .special-text {
+            font-style: italic;
+            color: #34495e;
+            margin: 30px 0;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .button:hover {
+            transform: scale(1.05);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .message {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Sorry</h1>
+        <div class="heart">❤️</div>
+        <div class="message">
+            <p>I know I made a mistake, and I sincerely apologize.</p>
+            <p>You mean the world to me, and hurting you is the last thing I ever want to do.</p>
+            <p class="special-text">"Sometimes it takes a mistake to realize how much someone means to you."</p>
+            <p>I'm committed to making things right and being better for you.</p>
+            <p>Please forgive me.</p>
+        </div>
+        <a href="#" class="button">I Promise To Do Better</a>
+    </div>
+</body>
+</html>
